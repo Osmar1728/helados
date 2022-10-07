@@ -1,0 +1,493 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+double luis,bianca,valeska,cambio;
+int uva = 15, fresa = 15, crema = 25, yo = 45, napo = 50;
+int opcion,opcioncompra;
+
+cout << "Buenas, venta de helados puede comprar" << endl;
+cout <<" --------------- " << endl;
+cout << "MENU HELADOS OSMAR"<< endl;
+cout <<" --------------- " << endl;
+cout << "Paleta de UVA --- $15 "<< endl;
+cout << "Paleta de FRESA --- $15 "<< endl;
+cout << "Bote de 1L de Helado de YOGUR --- $45 "<< endl;
+cout << "Bote de 1L de Helado de FRESA --- $45 "<< endl;
+cout << "Bote de 1L de Helado NAPOLITANO --- $50 "<< endl << endl;
+    
+cout<<"Cuanto dinero tienes Luis?"<<endl;
+cin>>luis;
+cout<<" "<<endl;
+cout<<"Cuanto dinero tienes Bianca?"<<endl;
+cin>>bianca;
+cout<<" "<<endl;
+cout<<"Cuanto dinero tienes Valeska?"<<endl;
+cin>>valeska;
+cout<<"---------------------------------------------"<<endl;
+
+//LUISITO
+if(luis >= uva && luis <crema)
+{
+cout<<"Luis te alcanza para Paletas, son $"<<luis <<endl;
+cout<<"Que paleta vas a querer? Uva[1] O Fresa[2] ";
+cin>>opcioncompra;
+
+if(opcioncompra = 1){
+cout << "Te la vas a llevar Luis ? Si[1] O No[2]";
+cin >>opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=luis-uva;		
+			cout<<"Mi buen Luis, tu cambio es "<<cambio<<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Luis, a la otra compras, saludos!" <<endl;
+			cout<<"----------------------------------------------------"<<endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Luiis, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+else if(opcioncompra=2){
+cout << "Te la vas a llevar Luis ? Si[1] O No[2]" << endl << endl;
+cin >>opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=luis-uva;		
+			cout<<"Mi buen Luis, tu cambio es "<<cambio<<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Luis, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Luiis, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+	
+}
+}
+
+else if(luis >= crema && luis <yo)
+{
+cout<<"Luis te alcanza para una Paleta de Crema, son $"<<luis <<endl;
+cout<<"La vas a comprar amigazo? Si[1] O No[2] ";
+cin >> opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=luis-crema;		
+			cout<<"Mi buen Luis, tu cambio es "<<cambio<<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Luis, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Luiis, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+
+else if(luis >= yo && luis <napo)
+{
+cout<<"Luis te alcanza para un Bote de 1L de Helado, son $"<<luis <<endl;
+cout<<"Cual sabor te doy? Yogur[1] O Fresa[2] ";
+cin>>opcioncompra;
+
+if(opcioncompra=1){
+	
+cout<<"La vas a comprar amigazo? Si[1] O No[2] ";
+cin >>opcion;
+
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=luis-yo;		
+			cout<<"Mi buen Luis, tu cambio es "<<cambio<<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Luis, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Luiis, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+else if(opcioncompra=2){
+cout<<"La vas a comprar amigazo? Si[1] O No[2] ";
+cin >>opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=luis-yo;		
+			cout<<"Mi buen Luis, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Luis, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Luiis, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+}
+}
+
+else if(luis >= napo)
+{
+cout<<"Luis te alcanza para una un Bote de 1L de Napolitano, son $"<<luis <<endl;
+cout<<"La vas a comprar amigazo? Si[1] O No[2] ";
+cin >> opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=luis-napo;		
+			cout<<"Mi buen Luis, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Luis, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Luiis, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+}
+
+else
+{
+cout<<"HEYYY Luis, tristemente no te alcanza para nada, ven otro dia, con "<<luis<<" pesos no hay nada :("<<endl << endl <<endl;
+}
+
+//BIANCA DISNEY
+if(bianca >=uva && bianca <crema)
+{
+cout<<"BIANCA te alcanza para Paletas, son $"<<bianca <<endl;
+cout<<"Que paleta vas a querer? Uva[1] O Fresa[2] ";
+cin>>opcioncompra;
+
+if(opcioncompra=1){
+cout << "Te la vas a llevar BIANCA ? Si[1] O No[2]";
+cin >>opcion;
+
+		switch (opcion)
+		{
+		    case 1:
+			cambio=bianca-uva;		
+			cout<<"Amiga BIANCA, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi BIANCA, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi BIANCA, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+else if(opcioncompra=2){
+cout << "Te la vas a llevar BIANCA ? Si[1] O No[2]" << endl << endl;
+cin >>opcion;
+
+		switch (opcion)
+		{
+		    case 1:
+			cambio=bianca-uva;		
+			cout<<"Amiga BIANCA, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi BIANCA, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi BIANCA, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+	
+}
+}
+
+else if(bianca >= crema && bianca <yo)
+{
+cout<<"BIANCA te alcanza para una Paleta de Crema, son $"<<bianca <<endl;
+cout<<"La vas a comprar amigaza? Si[1] O No[2] ";
+cin >> opcion;
+
+		switch (opcion)
+		{
+		    case 1:
+			cambio=bianca-crema;		
+			cout<<"Amiga BIANCA, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi BIANCA, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi BIANCA, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+
+else if(bianca >= yo && bianca <napo)
+{
+cout<<"BIANCA te alcanza para un Bote de 1L de Helado, son $"<<bianca <<endl;
+cout<<"Cual sabor te doy? Yogur[1] O Fresa[2] ";
+cin>>opcioncompra;
+
+if(opcioncompra=1){
+	
+cout<<"La vas a comprar amigaza? Si[1] O No[2] ";
+cin >>opcion;
+
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=bianca-yo;		
+			cout<<"Amiga BIANCA, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi BIANCA, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi BIANCA, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+else if(opcioncompra=2){
+cout<<"La vas a comprar amigaza? Si[1] O No[2] ";
+cin >>opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=bianca-yo;		
+			cout<<"Amiga BIANCA, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi BIANCA, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi BIANCA, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+}
+}
+
+else if(bianca >= napo)
+{
+cout<<"BIANCA te alcanza para una un Bote de 1L de Napolitano, son $"<<bianca <<endl;
+cout<<"La vas a comprar amigaza? Si[1] O No[2] ";
+cin >> opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=bianca-napo;		
+			cout<<"Amiga BIANCA, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi BIANCA, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi BIANCA, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+}
+
+else
+{
+cout<<"HEYYY BIANCA, tristemente no te alcanza para nada, ven otro dia, con "<<bianca<<" pesos no hay nada :("<<endl << endl <<endl;
+}
+
+//VALESKA ROMANA
+if(valeska >= uva && valeska <crema)
+{
+cout<<"VALESKA te alcanza para Paletas, son $"<<valeska <<endl;
+cout<<"Que paleta vas a querer? Uva[1] O Fresa[2] ";
+cin>>opcioncompra;
+
+if(opcioncompra=1){
+cout << "Te la vas a llevar VAL ? Si[1] O No[2]";
+cin >>opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=valeska-uva;		
+			cout<<"Amiga Val, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Valeska, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Valeska, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+else if(opcioncompra=2){
+cout << "Te la vas a llevar VALESKA ? Si[1] O No[2]" << endl << endl;
+cin >>opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=valeska-uva;		
+			cout<<"Amiga Val, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Valeska, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Valeska, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+	
+}
+}
+
+else if(valeska >= crema && valeska <yo)
+{
+cout<<"VAL te alcanza para una Paleta de Crema, son $"<< valeska <<endl;
+cout<<"La vas a comprar amigazo? Si[1] O No[2] ";
+cin >> opcion;
+
+		switch (opcion)
+		{
+        case 1:
+			cambio=valeska-crema;		
+			cout<<"Amiga Val, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+			
+		case 2:
+			cout<<"No pasa nada mi Valeska, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Valeska, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+
+else if(valeska >= yo && valeska <napo)
+{
+cout<<"VALESKA te alcanza para un Bote de 1L de Helado, son $"<<valeska <<endl;
+cout<<"Cual sabor te doy? Yogur[1] O Fresa[2] ";
+cin>>opcioncompra;
+
+if(opcioncompra=1){
+	
+cout<<"La vas a comprar amigaza? Si[1] O No[2] ";
+cin >>opcion;
+
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=valeska-yo;		
+			cout<<"Amiga Val, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Valeska, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Valeska, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+
+}
+else if(opcioncompra=2){
+cout<<"La vas a comprar amigaza? Si[1] O No[2] ";
+cin >>opcion;
+
+		switch (opcion)
+		{
+		    case 1:
+			cambio=valeska-napo;		
+			cout<<"Amiga Val, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Valeska, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Valeska, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+}
+}
+
+else if(valeska >= napo)
+{
+cout<<"VALESKA te alcanza para una un Bote de 1L de Napolitano, son $"<<valeska <<endl;
+cout<<"La vas a comprar amigaza? Si[1] O No[2] ";
+cin >> opcion;
+
+		switch (opcion)
+		{
+		case 1:
+			cambio=valeska-napo;		
+			cout<<"Amiga Val, tu cambio es " << cambio <<" te espero pronto" << endl << endl;
+			break;
+
+		case 2:
+			cout<<"No pasa nada mi Valeska, a la otra compras, saludos!" << endl << endl;
+			break;
+			
+		default:
+			cout << "Que Pues mi Valeska, solo dime Si o No, dale otra" << endl << endl;
+			break;
+		}
+}
+
+else
+{
+cout<<"HEYYY VAAAL, tristemente no te alcanza para nada, ven otro dia, con "<<valeska<<" pesos no hay nada :("<<endl << endl <<endl;
+}
+cout << "AMIGOOOOOOOOOOOOOOS Los espero otro dia, gracias por haber venido, saludos de su amigo Osmar";
+}
